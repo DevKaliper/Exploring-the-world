@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Slider video</title>
+		<link href="/dist/output.css" rel="stylesheet" />
+	</head>
+	<body class="relative w-full bg-gray-500">
+		<header
+			class=" md:flex hidden items-center justify-between px-[7.25rem] py-10"
+		>
+			<span class="text-3xl font-bold uppercase text-white">World</span>
+
+			<ul class="flex items-center gap-8">
+				<li class="block bg-white px-2 py-1">
+					<a class="font-bold text-black" href="#">Home</a>
+				</li>
+				<li>
+					<a class="font-bold tracking-wider text-white" href="#"
+						>Destination</a
+					>
+				</li>
+				<li>
+					<a class="font-bold tracking-wider text-white" href="#">About</a>
+				</li>
+				<li>
+					<a class="font-bold tracking-wider text-white" href="#">Contact</a>
+				</li>
+			</ul>
+		</header>
+		<header
+			class="md:hidden flex items-center justify-center py-10"
+		>
+			<span
+				class="text-center text-3xl font-bold uppercase text-white hover:cursor-pointer hover:text-black"
+				id="menu"
+				>Menu</span
+			>
+			<span
+				class="hidden absolute right-14 top-10 z-50 cursor-pointer text-6xl text-black hover:text-red-600"
+				id="close"
+			>
+				X
+			</span>
+			<ul
+				class="invisible absolute top-0 flex h-screen w-screen flex-col items-center justify-center gap-8 bg-white text-4xl"
+				id="menuOptions"
+			>
+				<li class="block bg-white px-2 py-1">
+					<a class="font-bold text-black" href="#">Home</a>
+				</li>
+				<li>
+					<a class="font-bold tracking-wider text-black" href="#"
+						>Destination</a
+					>
+				</li>
+				<li>
+					<a class="font-bold tracking-wider text-black" href="#">About</a>
+				</li>
+				<li>
+					<a class="font-bold tracking-wider text-black" href="#">Contact</a>
+				</li>
+			</ul>
+		</header>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
