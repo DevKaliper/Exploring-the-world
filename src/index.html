@@ -6,16 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Slider video</title>
 		<link href="/dist/output.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./styles.css">
+
 	</head>
 	<body
-		class="relative overflow-hidden bg-gray-500 after:absolute after:top-0 after:h-full after:w-1/2 after:backdrop-blur-sm after:content-['']"
+	class=" bg-gray-500 after:absolute after:top-0 after:z-10 after:h-full after:w-1/2 after:backdrop-blur-sm after:content-['']"
 	>
-		<header
-			class="absolute top-0 z-50 hidden w-screen items-center justify-between px-[7.25rem] py-10 md:flex"
+	
+	<header
+			class="absolute top-4 z-50 hidden w-screen items-center justify-between px-[7.25rem] py-10 md:flex"
 		>
 			<span class="text-3xl font-bold uppercase text-white">World</span>
 
-			<ul class="flex items-center gap-8">
+			<ul class="flex items-center gap-8 text-3xl">
 				<li class="block bg-white px-2 py-1">
 					<a class="font-bold text-black" href="#">Home</a>
 				</li>
@@ -69,15 +72,48 @@
 		</header>
 		<!-- -------------- -->
 
-		<section id="slideShow" class="w-full">
+		<section id="slideShow" class=" w-full">
 			<video
 				src="../img/video1.mp4"
 				autoplay
 				muted
 				loop
-				class="lg:object-fil h-screen w-screen object-cover visible"
+				class="lg:object-fil visible h-screen w-screen object-cover  "
+			></video>
+			<video
+				src="../img/video2.mp4"
+				autoplay
+				muted
+				loop
+				class="lg:object-fil hidden h-screen w-screen object-cover "
+			></video>
+			<video
+				src="../img/video3.mp4"
+				autoplay
+				muted
+				loop
+				class="lg:object-fil hidden h-screen w-screen object-cover "
+			></video>
+			<video
+				src="../img/video4.mp4"
+				autoplay
+				muted
+				loop
+				class="lg:object-fil hidden h-screen w-screen object-cover "
 			></video>
 		</section>
+
+		<section class="cities-cont w-1/2 bg-fuchsia-600">
+			<div class="cities">
+				<h3>Tokyo</h3>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus repellat id obcaecati harum esse, autem doloribus laboriosam quas eius nesciunt, ab voluptatem tempore distinctio. Ipsum ullam sequi esse excepturi?</p>
+			</div>
+		</section>
+
+
+
+	
+
 		<script src="./script.js"></script>
 	</body>
 </html>

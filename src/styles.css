@@ -1,0 +1,6 @@
+.cities-cont{
+    position: absolute;
+    left: 100px;
+   top:400px;
+    z-index: 10000;
+}
