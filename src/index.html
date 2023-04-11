@@ -7,9 +7,11 @@
 		<title>Slider video</title>
 		<link href="/dist/output.css" rel="stylesheet" />
 	</head>
-	<body class="relative w-full bg-gray-500">
+	<body
+		class="relative overflow-hidden bg-gray-500 after:absolute after:top-0 after:h-full after:w-1/2 after:backdrop-blur-sm after:content-['']"
+	>
 		<header
-			class=" md:flex hidden items-center justify-between px-[7.25rem] py-10"
+			class="absolute top-0 z-50 hidden w-screen items-center justify-between px-[7.25rem] py-10 md:flex"
 		>
 			<span class="text-3xl font-bold uppercase text-white">World</span>
 
@@ -30,8 +32,9 @@
 				</li>
 			</ul>
 		</header>
+		<!-- mobile header -->
 		<header
-			class="md:hidden flex items-center justify-center py-10"
+			class="absolute top-0 z-50 flex w-screen items-center justify-center py-10 md:hidden"
 		>
 			<span
 				class="text-center text-3xl font-bold uppercase text-white hover:cursor-pointer hover:text-black"
@@ -39,7 +42,7 @@
 				>Menu</span
 			>
 			<span
-				class="hidden absolute right-14 top-10 z-50 cursor-pointer text-6xl text-black hover:text-red-600"
+				class="absolute right-14 top-10 z-50 hidden cursor-pointer text-6xl text-black hover:text-red-600"
 				id="close"
 			>
 				X
@@ -64,7 +67,17 @@
 				</li>
 			</ul>
 		</header>
+		<!-- -------------- -->
 
+		<section id="slideShow" class="w-full">
+			<video
+				src="../img/video1.mp4"
+				autoplay
+				muted
+				loop
+				class="lg:object-fil h-screen w-screen object-cover visible"
+			></video>
+		</section>
 		<script src="./script.js"></script>
 	</body>
 </html>
