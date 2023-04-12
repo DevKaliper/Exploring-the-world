@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.cityContent{
+    @apply text-sm my-3 font-semibold text-black sm:text-lg md:text-xl md:text-white
+}
+
+.sectionCity{
+    @apply absolute left-28 top-[150px] z-50 w-1/2 md:left-52 md:top-[300px] bg-white text-black font-semibold rounded-lg md:bg-transparent
+}

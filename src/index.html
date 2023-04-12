@@ -9,10 +9,10 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body
-		class="bg-gray-500 after:absolute after:top-0 after:z-10 after:h-full after:w-1/2 after:backdrop-blur-sm after:content-['']"
+		class="bg-gray-500 after:absolute after:-left-1 after:top-0 after:z-10 after:h-full after:w-1/2 after:backdrop-blur-md after:content-['']"
 	>
 		<header
-			class="absolute top-4 z-50 hidden w-screen items-center justify-between px-[7.25rem] py-10 md:flex"
+			class="absolute top-4 z-50 hidden w-screen items-center justify-between px-[7.25rem] py-10 lg:flex"
 		>
 			<span class="text-3xl font-bold uppercase text-white">World</span>
 
@@ -35,10 +35,10 @@
 		</header>
 		<!-- mobile header -->
 		<header
-			class="absolute top-0 z-50 flex w-screen items-center justify-center py-10 md:hidden"
+			class="absolute top-0 z-50 flex w-screen items-center justify-center py-10 lg:hidden"
 		>
 			<span
-				class="text-center text-3xl font-bold uppercase text-white hover:cursor-pointer hover:text-black"
+				class="text-center text-3xl font-bold uppercase text-white hover:cursor-pointer hover:text-black "
 				id="menu"
 				>Menu</span
 			>
@@ -52,19 +52,19 @@
 				class="invisible absolute top-0 z-[20000] flex h-screen w-screen flex-col items-center justify-center gap-8 bg-white text-4xl"
 				id="menuOptions"
 			>
-				<li class="block bg-white px-2 py-1">
-					<a class="font-bold text-black" href="#">Home</a>
+				<li class="block bg-white px-2 py-1 ">
+					<a class="font-bold text-black hover:text-green-500" href="#">Home</a>
 				</li>
 				<li>
-					<a class="font-bold tracking-wider text-black" href="#"
+					<a class="font-bold tracking-wider text-black hover:text-green-500" href="#"
 						>Destination</a
 					>
 				</li>
 				<li>
-					<a class="font-bold tracking-wider text-black" href="#">About</a>
+					<a class="font-bold tracking-wider text-black hover:text-green-500" href="#">About</a>
 				</li>
 				<li>
-					<a class="font-bold tracking-wider text-black" href="#">Contact</a>
+					<a class="font-bold tracking-wider text-black hover:text-green-500" href="#">Contact</a>
 				</li>
 			</ul>
 		</header>
@@ -76,49 +76,114 @@
 				autoplay
 				muted
 				loop
-				class="lg:object-fil visible h-screen w-screen object-cover"
+				class="visible h-screen w-screen object-cover lg:object-fill"
 			></video>
 			<video
 				src="../img/video2.mp4"
 				autoplay
 				muted
 				loop
-				class="lg:object-fil hidden h-screen w-screen object-cover"
+				class="hidden h-screen w-screen object-cover lg:object-fill"
 			></video>
 			<video
 				src="../img/video3.mp4"
 				autoplay
 				muted
 				loop
-				class="lg:object-fil hidden h-screen w-screen object-cover"
+				class="hidden h-screen w-screen object-cover lg:object-fill"
 			></video>
 			<video
 				src="../img/video4.mp4"
 				autoplay
 				muted
 				loop
-				class="lg:object-fil hidden h-screen w-screen object-cover"
+				class="hidden h-screen w-screen object-cover lg:object-fill"
 			></video>
 		</section>
 
-		<section
-			class="visible absolute left-32 top-[200px] z-50 w-1/2 md:left-52 md:top-[300px]"
-			id="cities"
-		>
-			<div
-				class="z-50 flex flex-col items-center justify-center p-4 text-center md:items-start md:justify-start md:text-left"
+		<div id="Just-to-hide-content-on-menu">
+			<section
+				class="cities visible absolute left-1/4 top-[150px] z-50 w-1/2 md:left-52 md:top-[300px] bg-white text-black font-semibold rounded-lg md:bg-transparent"
+				
 			>
-				<h3
-					class="z-50 my-2 text-2xl font-bold uppercase text-white md:my-4 md:text-8xl"
+				<div
+					class="z-50 flex flex-col items-center justify-center p-4 text-center md:items-start md:justify-start md:text-left"
 				>
-					Tokyo
-				</h3>
-				<p class=" text-sm sm:text-lg text-white md:text-xl">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus
-					repellat id obcaecati harum esse, autem doloribus laboriosam quas eius
-					nesciunt, ab voluptatem tempore distinctio. Ipsum ullam sequi esse
-					excepturi?
-				</p>
+					<h3
+						class="z-50 my-2 text-2xl font-bold uppercase text-black md:my-4 md:text-8xl md:text-white"
+					>
+						Tokyo
+					</h3>
+					<p class="cityContent">
+						Tokio, la ajetreada capital de Japón, mezcla lo ultramoderno y lo tradicional, desde los rascacielos iluminados con neones hasta los templos históricos. Hoy en día, Tokio ofrece a sus visitantes una variedad prácticamente ilimitada de entretenimiento, cultura, gastronomía y compras. 
+					</p>
+				</div>
+			</section>
+			<section
+				class="cities absolute left-1/4 top-[150px] z-50 hidden w-1/2 md:left-52 md:top-[300px]  bg-white text-black font-semibold rounded-lg md:bg-transparent"
+				
+			>
+				<div
+					class="z-50 flex flex-col items-center justify-center p-4 text-center md:items-start md:justify-start md:text-left"
+				>
+					<h3
+						class="z-50 my-2 text-2xl font-bold uppercase text-black md:my-4 md:text-8xl md:text-white "
+					>
+						Paris
+					</h3>
+					<p class="cityContent">
+						París, la capital de Francia, es una importante ciudad europea y un centro mundial del arte, la moda, la gastronomía y la cultura. Su paisaje urbano del siglo XIX está entrecruzado por amplios bulevares y el río Sena. Aparte de estos hitos, como la Torre Eiffel y la catedral gótica de Notre Dame del siglo XII
+					</p>
+				</div>
+			</section>
+			<section
+				class="cities absolute left-1/4 top-[150px] z-50 hidden w-1/2 md:left-52 md:top-[300px]  bg-white text-black font-semibold rounded-lg md:bg-transparent"
+				
+			>
+				<div
+					class="z-50 flex flex-col items-center justify-center p-4 text-center md:items-start md:justify-start md:text-left"
+				>
+					<h3
+						class="z-50 my-2 text-2xl font-bold uppercase  text-black md:my-4 md:text-8xl md:text-white"
+					>
+						Egipto
+					</h3>
+					<p class="cityContent">
+						Egipto, país que une el noreste de África con Medio Oriente, data del período de los faraones. Tiene monumentos de milenios de antigüedad ubicados junto al fértil valle del río Nilo, incluidas las colosales pirámides de Guiza y la Gran Esfinge, al igual que las tumbas del Valle de los Reyes y el Templo de Karnak bordeado de jeroglíficos en Luxor.
+					</p>
+				</div>
+			</section>
+			<section
+				class="cities absolute left-1/4 top-[150px] z-50 hidden w-1/2 md:left-52 md:top-[300px]  bg-white text-black font-semibold rounded-lg md:bg-transparent"
+				
+			>
+				<div
+					class="z-50 flex flex-col items-center justify-center p-4 text-center md:items-start md:justify-start md:text-left"
+				>
+					<h3
+						class="z-50 my-2 text-2xl font-bold uppercase text-black md:my-4 md:text-8xl md:text-white"
+					>
+						Maldivas
+					</h3>
+					<p class="cityContent">
+						Maldivas es un país tropical en el océano Índico que abarca 26 atolones con forma de anillos que se componen de más de 1,000 islas de coral. Es conocido por las playas, las lagunas azules y los extensos arrecifes.
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<section class="absolute bottom-10 right-10 flex gap-2">
+			<div
+				class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white p-6 font-mono text-4xl font-extrabold md:h-20 md:w-20 md:text-5xl"
+				id="prev"
+			>
+				<
+			</div>
+			<div
+				class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white p-6 font-mono text-4xl font-extrabold md:h-20 md:w-20 md:text-5xl"
+				id="next"
+			>
+				>
 			</div>
 		</section>
 
