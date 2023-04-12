@@ -1,5 +1,5 @@
 # Exploring-the-world
-Web site about some cities around the world. Its made with tailwind and JS. Its full responsive.
+Web site about some cities around the world. Its made with tailwind and JS. Its fully responsive.
 
 
 ## Tokyo
