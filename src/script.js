@@ -78,3 +78,8 @@ closeMenu.addEventListener("click", e=>{
 
 
 })
+
+
+setTimeout(() => {
+    document.querySelector(".loader").remove();
+}, 2000);
